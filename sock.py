@@ -25,6 +25,8 @@ while True:
         filename = 'index.html'
     elif route == "/detail_elaina" :
         filename = "detail_elaina.html"
+    elif route == "/oneokcat" :
+        filename = "oneokcat.html"
 
     try:
         fin = open(filename)
