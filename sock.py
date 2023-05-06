@@ -27,7 +27,7 @@ while True:
         filename = "detail_elaina.html"
     elif route == "/oneokcat" :
         filename = "oneokcat.html"
-    elif route == "messi":
+    elif route == "messi_facts":
         filename = "messi_facts.html"
     try:
         fin = open(filename)
