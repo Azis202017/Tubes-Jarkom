@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f2f2f2;
+}
+.form-control:focus {
+  border-color: #c0e0bd;
+  box-shadow: 0 0 0 0.2rem rgba(160, 208, 156, 0.5);
+} 
+
+@media screen and (min-width: 1440px) {
+  .row {
+    width: 100%;
+  }
+  /* Swiper */
+  .swiper {
+    margin-top: 150px;
+    width: 100%;
+    margin-bottom: 31px;
+  }
+ 
+
+  .swiper-wrapper .swiper-slide:last-child {
+    padding-right: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 80%;
+  }
+  .swiper-slide-next {
+    margin-top: 150px;
+
+    border-radius: 20px;
+
+    transform: rotate(5deg) !important;
+  }
+
+  .swiper-slide-prev {
+    margin-top: 150px;
+    border-radius: 20px;
+
+    transform: rotate(-5deg) !important;
+  }
+  .swiper-slide-prev img {
+    height: 400px !important;
+  }
+  .swiper-slide-next img {
+    height: 400px !important;
+  }
+
+  .swiper-slide img {
+    border-radius: 20px;
+    width: 100%;
+    background-size: cover;
+    height: 500px;
+  }
+
+  /* End Swiper */
+  /* Articat */
+  .artifact-right-container {
+    margin-top: -100px;
+  }
+  .artifact-right {
+    margin-top: -200px;
+
+    width: 342px;
+  }
+  .artifact-left {
+    width: 240px;
+  }
+  /* End artifact */
+  /* Data RW */
+  #data-rw {
+    margin: 0 156px 0 156px;
+  }
+  .title-text {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 28px;
+    /* identical to box height, or 70% */
+    margin-top: 49px;
+    letter-spacing: 0.04em;
+  }
+  .subtitle-text {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    /* or 120% */
+
+    letter-spacing: 0.04em;
+  }
+  .data-info {
+    background-color: #61b15a;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    border-radius: 15px;
+    width: 240px;
+    height: 237px;
+  }
+  .angka-info {
+    margin-top: 80px;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 28px;
+  }
+  .info-description {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+
+    letter-spacing: 0.04em;
+    margin-top: 30px;
+    margin-bottom: 52px;
+
+    color: #ffffff;
+  }
+  /* End Data RW */
+
+  /* Kegiatan Masyarakat */
+  #kegiatan-masyarakat {
+    position: relative;
+    padding: 84px 0px 0px 0px;
+    color: white;
+    text-align: center;
+    background: #61b15a;
+    border-radius: 32px;
+    margin: 0 156px 0 156px;
+    height: 600px;
+    margin-top: -140px;
+  }
+  .lingkaran-luar {
+    top: 40px;
+    width: 385px;
+    right: 35px;
+    height: 385px;
+    position: absolute;
+    opacity: 0.5;
+    border-top-right-radius: 32px;
+    filter: blur(150px);
+  }
+  .lingkaran-dalam {
+    border-top-right-radius: 32px;
+
+    width: 385px;
+    height: 385px;
+    background: #ffea20;
+    backdrop-filter: blur(2000px);
+  }
+  .lingkaran-luar-kiri {
+    bottom: -20px;
+    left: -20px;
+
+    width: 385px;
+    height: 385px;
+    position: absolute;
+    opacity: 0.5;
+    filter: blur(150px);
+  }
+  .lingkaran-dalam-kiri {
+    width: 385px;
+    height: 385px;
+
+    background: #ffea20;
+    backdrop-filter: blur(2000px);
+  }
+  .kegiatan-masyarakat-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+  }
+  .kegiatan-masyarakat-subtitle {
+    letter-spacing: 0.04em;
+    font-weight: 400;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    width: 40%;
+  }
+  .video-kegiatan {
+    position:absolute;
+    z-index: 1;
+    width: 840px;
+    height: 500px;
+    border-radius: 32px;
+    margin-top: 50px;
+    background: url("https://res.cloudinary.com/da4snjwu5/image/upload/v1683622593/image_28_tbhpzd.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .video-play-button {
+    width: 80px;
+    height: 80px;
+    margin-top: 210px;
+    margin-bottom: 210px;
+    border-radius: 100%;
+    background: #ffffff;
+  }
+  .play-icon {
+    width: 16px;
+    height:16px;
+    margin: 32px 0 32px 5px;
+  }
+  /* End kegiatan masyarakat */
+
+  .latest-new-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 28px;
+    /* identical to box height, or 70% */
+
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    /* Hitam */
+
+    color: #1f1f1f;
+  }
+  .latest-new-button {
+    width: 166px;
+    height: 57px;
+    background: #81c17b;
+    display: inline-block;
+    text-align: center;
+    padding: 19px 0px 19px 0px;
+    color: white;
+    border-radius: 10px;
+    margin: 49px 0px 150px 0px;
+  }
+  .latest-new-button:hover {
+    background: #61b15a;
+    text-decoration: none;
+    color: white;
+    transition-duration: 20ms;
+  }
+
+  /* End Artifact */
+  #form-keluhan {
+    margin: 0 156px 153px 156px;
+  }
+
+  #map {
+    width: 456px;
+    height: 569.5px;
+    border-radius: 48px;
+  }
+  .alamat-description-card {
+    width: 474px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 32px;
+    border: 1px solid #d1d1d1;
+  }
+  .alamat-icon {
+    margin: 28px 30px 28px 28px;
+    width: 64px;
+    height: 64px;
+    border: 1px solid;
+    background: linear-gradient(135deg, #ffb100 0%, rgba(255, 177, 0, 0) 100%),
+      linear-gradient(0deg, rgba(255, 177, 0, 0.2), rgba(255, 177, 0, 0.2));
+    border: 1px solid;
+
+    border-image-source: linear-gradient(
+      135deg,
+      #ffb100 0%,
+      rgba(255, 177, 0, 0) 100%
+    );
+
+    border-radius: 16px;
+  }
+  .image-icon {
+    margin: 8px 8px;
+    width: 48px;
+    height: 48px;
+    background: #ffb100;
+    border-radius: 16px;
+  }
+  .img-icon-alamat {
+    margin: 12px 13px 12px 14px;
+    width: 21px;
+    height: 24px;
+  }
+  .alamat-description-text {
+    /* Headline 3 Bold */
+
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    /* or 120% */
+    letter-spacing: 0.04em;
+    /* Hitam */
+    margin: 36px 0px 36px 0px;
+    color: #1f1f1f;
+  }
+
+  .fl-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 28px;
+  }
+  .fl-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* or 125% */
+
+    letter-spacing: 0.04em;
+
+    color: #181945;
+    margin: 27px 0px 60px 0px;
+    opacity: 0.6;
+  }
+  .form-control {
+    border: 1px solid rgba(24, 25, 69, 0.1);
+    border-radius: 16px;
+    height: 60px;
+  }
+  input[type="text"] {
+    letter-spacing: 0.04em;
+
+    color: rgba(24, 25, 69, 0.6);
+
+    opacity: 0.8;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .btn-custom {
+    /* Hijau primer 5 */
+    margin-top: 32px;
+    background: #81c17b;
+    border-radius: 16px;
+    padding: 20px 66px 20px 66px;
+    color: white;
+    border: none;
+  }
+  .btn-custom:hover {
+    background-color: #61b15a;
+  }
+  #pesan-keluhan {
+    height: 200px;
+  }
+}
