@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+@media screen and (min-width: 1440px) {
+  footer {
+    background-color: #3a6a36;
+    padding-top: 97px;
+    padding-left: 156px;
+    padding-right: 156px;
+    margin-top: -120px;
+  }
+  .website-footer-title {
+    color: white;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .website-footer-title span {
+    color: #c0e0bd;
+  }
+  .website-footer-subtitle {
+    margin-top: 32px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+
+    letter-spacing: -0.02em;
+    color: #ffffff;
+
+    opacity: 0.6;
+  }
+  .website-footer-social-media {
+    margin-top: 17px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .website-footer-quick-link-title,
+  .website-footer-information-contact-title {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    /* identical to box height, or 167% */
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .website-footer-quick-link-list {
+    list-style: none;
+    padding: 0;
+    color: white;
+  }
+  .website-footer-quick-link-list li {
+    margin-top: 24px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .website-footer-quick-link-list li a {
+    color: white;
+  }
+  .website-footer-copyright {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    margin-top: 89px;
+    margin-bottom: 53px;
+  }
+  .icon {
+    background: linear-gradient(135deg, #ffb100 0%, rgba(255, 177, 0, 0) 100%),
+      linear-gradient(0deg, rgba(255, 177, 0, 0.2), rgba(255, 177, 0, 0.2));
+    border: 1px solid;
+
+    border-image-source: linear-gradient(
+      135deg,
+      #ffb100 0%,
+      rgba(255, 177, 0, 0) 100%
+    );
+    height: 64px;
+    width: 64px;
+
+    border-radius: 16px;
+  }
+  .icon-telpon {
+    display: inline-block;
+    background: #ffb100;
+    border-radius: 16px;
+    width: 48px;
+    height: 48px;
+    margin: 8px;
+  }
+  .icon-telpon:hover {
+    background-color: #ffc133;
+  }
+  .icon-telpon img {
+    width: 24px;
+    height: 24px;
+    margin: 12px;
+  }
+  .information {
+    margin-left: 14px;
+  }
+  .information h3 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    /* identical to box height, or 200% */
+
+    letter-spacing: -0.02em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .information p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+
+    letter-spacing: -0.02em;
+
+    color: #ffffff;
+  }
+}
