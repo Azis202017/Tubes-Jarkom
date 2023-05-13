@@ -1,0 +1,82 @@
+body {
+  scroll-behavior: smooth;
+}
+.dropdown-item:hover {
+  background: #d0e8cd;
+}
+.nav-item.dropdown .dropdown-item.active {
+  background-color: #61b15a !important;
+  color: white;
+}
+.dropdown-menu {
+  border: 0 !important;
+}
+.scrolling-nav {
+  background-color: white;
+}
+.nav-active  {
+  color: #61b15a !important;
+}
+@media screen and (min-width: 992px) and (max-width: 1440px) {
+  /* Navbar */
+  .navbar {
+    padding: 20px 156px 20px 156px !important;
+  }
+  .navbar-brand {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .nav-item {
+    margin-top: 7px;
+    font-size: 12px;
+  }
+  .active a {
+    color: #61b15a !important;
+  }
+  .icon-search-nav {
+    width: 24px;
+    height: 24px;
+  }
+  /* End navbar */
+}
+@media screen and (min-width: 1440px) {
+  /* Nav */
+  .navbar {
+    padding: 20px 156px 20px 156px !important;
+  }
+
+  .navbar-brand {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+  }
+  .navbar-brand span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #61b15a;
+  }
+  .nav-item {
+    margin-top: 5px;
+    margin-left: 16px;
+    font-size: 16px;
+  }
+  .active a {
+    color: #61b15a !important;
+  }
+  .icon-search-nav {
+    width: 24px;
+    height: 24px;
+  }
+  .btn-download {
+    display: inline-block;
+    background-color: #81c17b;
+    border-radius: 5px;
+    color: white !important;
+  }
+  .btn-download:hover {
+    background-color: #61b15a;
+  }
+  /* End navbar */
+}
