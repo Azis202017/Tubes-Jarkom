@@ -1,33 +1,521 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="navbar.css" />
+
+    <title>RW Sepuluh</title>
   </head>
   <body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light scrolling-nav">
+      <a class="navbar-brand" href="index.html">RW<span>Sapuluh</span></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link nav-active" href="index.html"
+              >Beranda <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Tentang Kami
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="sejarah.html">Sejarah</a>
+              <a class="dropdown-item" href="kegiatan.html">Kegiatan</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Layanan
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Pindah Masuk</a>
+              <a class="dropdown-item" href="#">Pindah Keluar</a>
+              <a class="dropdown-item" href="#"></a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Informasi
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#kontak">Kontak</a>
+              <a class="dropdown-item" href="#">Prestasi</a>
+              <a class="dropdown-item" href="#">Kepengurusan</a>
+            </div>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">Kelembagaan</a>
+          </li> -->
+
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><img
+                src="https://res.cloudinary.com/da4snjwu5/image/upload/v1683513061/rw/u4qmjlsu18u7cluwckcf.png"
+                alt="Search"
+                class="icon-search-nav"
+                loading="lazy"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-download" href="#">Download Surat</a>
+          </li>
+
+          <!-- <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Dropdown link
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Kelembagaan</a>
+              <a class="dropdown-item" href="#">Informasi</a>
+              <a class="dropdown-item" href="#"></a>
+            </div>
+          </li> -->
+        </ul>
+      </div>
+    </nav>
+
+    <!-- End Navbar -->
+    <!-- Carousel -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="https://res.cloudinary.com/da4snjwu5/image/upload/v1683513063/rw/dcugweqycajsougd4weu.png"
+            loading="lazy"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://res.cloudinary.com/da4snjwu5/image/upload/v1683513063/rw/xn2pgknljkedkwt0abs1.png"
+            loading="lazy"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://res.cloudinary.com/da4snjwu5/image/upload/v1683513064/rw/raox0xjdqycz4okdlnqm.png"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- End Carousel -->
+    <!-- Data RW -->
+    <section id="data-rw">
+      <div class="row" style="width: 100%">
+        <div class="col-lg-4">
+          <h1 class="title-text" data-aos="fade-in">Data RW 10</h1>
+          <p class="subtitle-text" data-aos="fade-in">
+            Berikut kami sajikan data penduduk yang ada di RW 10 beserta dengan
+            RT nya
+          </p>
+        </div>
+        <div class="col-lg-8">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="data-info" data-aos="fade-in">
+                <h2 class="angka-info" data-aos="fade-in" data-aos="fade-in">
+                  7
+                </h2>
+                <p class="info-description" data-aos="fade-in">
+                  Rukun Tetangga
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="data-info" data-aos="fade-in">
+                <h2 class="angka-info" data-aos="fade-in">239</h2>
+                <p class="info-description" data-aos="fade-in">
+                  Kepala Keluarga
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="data-info" data-aos="fade-in">
+                <h2 class="angka-info" data-aos="fade-in">1540</h2>
+                <p class="info-description" data-aos="fade-in">Jiwa</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End data rw -->
+
+    <!-- Artifact right -->
+    <div class="d-flex justify-content-end w-100">
+      <img
+        class="artifact-right"
+        src="https://res.cloudinary.com/da4snjwu5/image/upload/v1683596799/Subtract_abpfuc.png"
+        alt=""
+      />
+    </div>
+    <!-- Kegiatan Masyarakat -->
+    <section id="kegiatan-masyarakat">
+      <h1 class="kegiatan-masyarakat-title">Kegiatan Masyarakat di RW 10</h1>
+      <div class="d-flex justify-content-center">
+        <p class="kegiatan-masyarakat-subtitle">
+          Berikut ini adalah video dari kegiatan kegiatan yang di adakan oleh
+          masyarakat RW10
+        </p>
+      </div>
+      <div class="d-flex justify-content-center">
+        <div class="video-kegiatan">
+          <div class="d-flex justify-content-center">
+            <div class="video-play-button">
+              <img
+                src="https://res.cloudinary.com/da4snjwu5/image/upload/v1683623336/Polygon_1_shrndp.png"
+                alt=""
+                class="play-icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-end w-100">
+        <div loading="lazy" class="lingkaran-luar">
+          <div class="lingkaran-dalam"></div>
+        </div>
+      </div>
+      <div class="d-flex align-items-end h-100">
+        <div loading="lazy" class="lingkaran-luar-kiri">
+          <div class="lingkaran-dalam-kiri"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Kegiatan Masyarakat -->
+    <!-- End artifact -->
+    <!-- Artifact -->
     <img
-      src="https://upload.wikimedia.org/wikipedia/en/f/f8/Majonotabitabi.jpeg"
-      alt=""
+      src="https://res.cloudinary.com/da4snjwu5/image/upload/v1683513061/rw/lxhe6dexxybrevwe3zbn.png"
+      class="artifact-left"
+      loading="lazy"
     />
-    <br />
-   The journey of elaina
-   <br />
-   <img
-      src="https://cdn.discordapp.com/attachments/732257064495087687/1104056807011401790/Screenshot_20230428-212351_Instagram.jpg"
-      alt=""
-      width="200"
-      height="200"
-    />
-    <br />
-   OneOkCat
-   <br />
-   <img src="https://cdn.discordapp.com/attachments/1026274625916764250/1104397237070594148/messigoat.jpeg"
-    alt="Messi Holding Himself"
-    width="240"
-    height="400">
-    <br />
-    messi_facts
+
+    <section id="latest-new">
+      <h1 class="latest-new-title" data-aos="fade-in">Berita Terbaru Kami</h1>
+      <div class="d-flex justify-content-center w-100">
+        <a href="" class="latest-new-button" data-aos="fade-in">Lihat Semua</a>
+      </div>
+    </section>
+    <!-- End Artifact -->
+    <!-- Form Keluhan -->
+    <section id="form-keluhan">
+      <div class="row">
+        <div class="col-lg-5">
+          <div id="map" data-aos="fade-in"></div>
+          <div class="alamat-description-card" data-aos="fade-in">
+            <div class="d-flex">
+              <div class="alamat-icon">
+                <div class="image-icon">
+                  <img
+                    data-aos="fade-in"
+                    src="https://res.cloudinary.com/da4snjwu5/image/upload/v1683513060/rw/att9wdpljxhofpicuvuw.png"
+                    class="img-icon-alamat"
+                    alt="Lokasi RW 10 Bojongsoang"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <h3 class="alamat-description-text" data-aos="fade-in">
+                RWSapuluh Bojongsoang, <br />
+                Kab. Bandung
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h1 class="fl-title" data-aos="fade-in">Form Keluhan</h1>
+          <p class="fl-description" data-aos="fade-in">
+            Dengan mendengarkan keluhan anda kami bisa memajukan RW ini bersama
+            sama
+          </p>
+          <div class="form">
+            <form action="">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label data-aos="fade-in" for="nama-lengkap"
+                      >Nama Lengkap*</label
+                    >
+                    <input
+                      data-aos="fade-in"
+                      type="text"
+                      id="nama-lengkap"
+                      name="nama-lengkap"
+                      class="form-control"
+                      placeholder=" nama lengkap anda..."
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label data-aos="fade-in" for="email">Email *</label>
+                    <input
+                      data-aos="fade-in"
+                      type="text"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Masukkan nama lengkap anda..."
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="subject" data-aos="fade-in">Subject *</label>
+                    <input
+                      data-aos="fade-in"
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      class="form-control"
+                      placeholder="Masukkan subject."
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="nomor-telpon" data-aos="fade-in"
+                      >Nomor Telepon *</label
+                    >
+                    <input
+                      data-aos="fade-in"
+                      type="text"
+                      id="nomor-telpon"
+                      name="nomor-telpon"
+                      class="form-control"
+                      placeholder="Nomor Telpon ..."
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <label for="pesan-keluhan" data-aos="fade-in"
+                    >Pesan Keluhan*</label
+                  >
+                  <textarea
+                    data-aos="fade-in"
+                    name=""
+                    id="pesan-keluhan"
+                    class="form-control pesan-keluhan"
+                    required
+                  ></textarea>
+                </div>
+                <div class="d-flex justify-content-end w-100">
+                  <button type="submit" data-aos="fade-in" class="btn-custom">
+                    Kirim Pesan
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End form keluhan -->
+
+    <footer id="kontak">
+      <div class="row">
+        <div class="col-lg-5">
+          <h1 class="website-footer-title" data-aos="fade-in">
+            RW<span>Sapuluh</span>
+          </h1>
+          <p class="website-footer-subtitle" data-aos="fade-in">
+            Media Informasi mengenai kegiatan apa saja yang ada di dalam rukun
+            warga nomor 10 serta visi dan misi nya dan dapat sebagai sarana
+            untuk menyampaikan keluhan.
+          </p>
+          <h4 class="website-footer-social-media" data-aos="fade-in">
+            informasi sosial media
+          </h4>
+          <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4"></div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <h1 class="website-footer-quick-link-title" data-aos="fade-in">
+            Link Cepat
+          </h1>
+          <ul class="website-footer-quick-link-list" data-aos="fade-in">
+            <li><a href="">Visi</a></li>
+            <li>Misi</li>
+            <li>Prestasi</li>
+            <li>Blog</li>
+            <li>FAQs</li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h1
+            class="website-footer-information-contact-title"
+            data-aos="fade-in"
+          >
+            Kontak Informasi
+          </h1>
+          <div class="row">
+            <div class="col-lg-2">
+              <div class="icon" data-aos="fade-in">
+                <a
+                  data-aos="fade-in"
+                  href="tel:085893164214"
+                  class="icon-telpon"
+                >
+                  <img
+                    data-aos="fade-in"
+                    src="https://res.cloudinary.com/da4snjwu5/image/upload/v1683513060/rw/maj5psl9ggabbfhuvqna.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="information" data-aos="fade-in">
+                <h3 data-aos="fade-in">Nomor Telefon</h3>
+                <p data-aos="fade-in">085893164214</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2">
+              <div class="icon" data-aos="fade-in">
+                <div class="icon-telpon">
+                  <img
+                    data-aos="fade-in"
+                    src="https://res.cloudinary.com/da4snjwu5/image/upload/v1683513061/rw/sexvtqywsdndmw7muhdk.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div href="" class="information">
+                <h3 data-aos="fade-in">Buka Jam</h3>
+                <p data-aos="fade-in">09:00 - 18:00</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2">
+              <div class="icon" data-aos="fade-in">
+                <a
+                  href="https://www.google.co.id/maps/search/komplek+ciganitri/@-6.9714975,107.6433307,16z/data=!3m1!4b1?hl=id"
+                  class="icon-telpon"
+                  data-aos="fade-in"
+                >
+                  <img
+                    data-aos="fade-in"
+                    src="https://res.cloudinary.com/da4snjwu5/image/upload/v1683513060/rw/att9wdpljxhofpicuvuw.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="information">
+                <h3 data-aos="fade-in">Alamat Desa</h3>
+                <p data-aos="fade-in">RWSapuluh Bojongsoang, Kab. Bandung</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <h3 class="website-footer-copyright">
+            &copy; Tim Abdimas Fakultas Informatika, Universitas Telkom
+          </h3>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
