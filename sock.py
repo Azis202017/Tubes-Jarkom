@@ -19,6 +19,8 @@ while True:
     
     headers = request.split('\n')
     route = headers[0].split()[1]
+    type_req = headers[9].split()[1].split()[0].split()
+    get_type = type_req[0][0:9]
     filename = ""
    
     if route == '/':
@@ -35,9 +37,22 @@ while True:
         fin.close()
 
         response = 'HTTP/1.0 200 OK\n\n' + content
+        req = response.split()
+        print("======================================")
+        print("Client Request")
+        if(req[1] == "200") :
+            print(get_type)
+
+        
+      
+        print("======================================")
+
     except FileNotFoundError:
 
         response = 'HTTP/1.0 404 NOT FOUND\n\n404 NOT FOUND'
+        req = response.split()
+        if(req[1] == "400") :
+            print("Not found ")
     client_connection.sendall(response.encode())
     client_connection.close()
 
